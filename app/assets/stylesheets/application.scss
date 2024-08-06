@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap";
+
+ @font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/roboto.woff2') format('woff2'),
+       url('/assets/fonts/roboto.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  color: rgb(84, 130, 158);
+}
+
+/* Enlève le soulignement des liens par défaut */
+a {
+  text-decoration: none;
+}
+
+/* Optionnel : ajoute un soulignement uniquement au survol */
+a:hover {
+  text-decoration: underline;
+}
